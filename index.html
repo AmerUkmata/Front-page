@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Front page</title>
+    <style>
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .activeItem {
+            border-bottom: 1px solid #fff;
+        }
+    </style>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Ushtrimi i pare</title>
+    <style>
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .activeItem {
+            border-bottom: 1px solid #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark text-light fixed-top" style="background-color: #000;">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" width="120" height="60"></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="buttons.html">Buttons</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Contact
+                            Us</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Via Telephone</a>
+                            <a class="dropdown-item" href="#">Via Email</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="mt-5">
+        <div class="container text-center pt-5">
+            <p class="h1 pt-5">Home page</p>
+            <p style="font-size: 12px;margin-top: -10px;">Diqka per kete home page.</p>
+            <hr>
+            <p class="w-50 float-left p-5 text-justify">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam non laborum, voluptate id facilis
+                perspiciatis suscipit, unde pariatur ducimus aliquam nulla quod error, nemo provident dicta vero. Quia,
+                quasi optio.
+            </p>
+            <p class="w-50 float-right p-5 text-justify">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam non laborum, voluptate id facilis
+                perspiciatis suscipit, unde pariatur ducimus aliquam nulla quod error, nemo provident dicta vero. Quia,
+                quasi optio.
+            </p>
+            <div class="clearfix"></div>
+            <h2>Templates</h2>
+            <hr class="pb-4">
+            <div class="px-5">
+                <img src="images/service1.PNG" class="w-25 float-left px-1" alt="">
+                <img src="images/service2.PNG" class="w-25 float-left px-1" alt="">
+                <img src="images/service1.PNG" class="w-25 float-left px-1" alt="">
+                <img src="images/service2.PNG" class="w-25 float-left px-1" alt="">
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="bg-light mt-5 pb-5">
+        <div class="container text-center">
+            <p class="h1 pt-5">Services</p>
+            <p style="font-size: 12px;margin-top: -10px;">Something about our services.</p>
+            <hr>
+            <p class="text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ullam ad placeat eveniet adipisci
+                doloremque eum. Ducimus iusto doloribus delectus vel perspiciatis soluta possimus error eos tenetur
+                similique, quaerat ex.
+            </p>
+            <img src="images/service1.PNG" class="w-50 float-left px-2 mb-3" alt="">
+            <img src="images/service2.PNG" class="w-50 float-left px-2" alt="">
+            <div class="clearfix"></div>
+            <img src="images/service1.PNG" class="w-50 float-left px-2" alt="">
+            <img src="images/service2.PNG" class="w-50 float-left px-2" alt="">
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <footer style="background-color: #000;overflow: hidden;">
+        <div class="container">
+            <p class="text-muted p-3 my-auto">&copy;Copyright; All right reserved</p>
+        </div>
+    </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".nav-item").on('click', function () {
+                $(".nav-item").removeClass("activeItem");
+                $(this).addClass("activeItem");
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Front page</title>
+    <style>
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .activeItem {
+            border-bottom: 1px solid #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark text-light fixed-top" style="background-color: #000;">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" width="120" height="60"></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services"> Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="buttons.html"> Buttons</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Contact
+                            Us</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Via Telephone</a>
+                            <a class="dropdown-item" href="#">Via Email</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container pt-5">
+        <h1 class="text-muted pt-5">Default Buttons</h1>
+        <button class="btn btn-primary"> un jam nje primary button</button>
+        <button class="btn btn-secondary">un jam nje secondary button</button>
+        <button class="btn btn-danger">un jam nje danger button</button>
+        <button class="btn btn-warning">un jam nje warning button</button>
+        <button class="btn btn-success">un jam nje success button</button>
+        <button class="btn btn-info">un jam nje info button</button>
+        <button class="btn btn-dark mt-1">un jam nje dark button</button>
+
+        <h1 class="text-muted pt-5">Outlined Buttons</h1>
+        <button class="btn btn-outline-primary">un jam nje primary button</button>
+        <button class="btn btn-outline-secondary">un jam nje secondary button</button>
+        <button class="btn btn-outline-danger">un jam nje danger button</button>
+        <button class="btn btn-outline-warning">un jam nje warning button</button>
+        <button class="btn btn-outline-success">un jam nje success button</button>
+        <button class="btn btn-outline-info">un jam nje info button</button>
+        <button class="btn btn-outline-dark mt-2 mb-5">un jam nje dark button</button>
+    </div>
+
+    <footer style="background-color: #000;overflow: hidden;">
+        <div class="container">
+            <p class="text-muted p-3 my-auto">&copy;Copyright; All right reserved</p>
+        </div>
+    </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".nav-item").on('click', function () {
+                $(".nav-item").removeClass("activeItem");
+                $(this).addClass("activeItem");
+            });
+        });
+    </script>
+    </body>
+    </html>
